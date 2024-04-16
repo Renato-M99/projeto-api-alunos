@@ -32,9 +32,12 @@ document.querySelector('.busca').addEventListener('submit', async (event) => {
                 windAngle: json.wind.deg
             });
         } else {
+            clearInfo();
             showWarning('Cidade não encontrada!');
         }
 
+    }else{
+        clearInfo();
     }
 })
 
